@@ -16,3 +16,16 @@ function factorial(n){
 }
 
 //Question 2
+//function range(x, y) {
+//    if (x+1 === y)  return;
+//    console.log(y-1);
+//    range(x, y-1);
+//}
+
+//Question 3
+function exponentProgram(base, exponent){
+    while(exponent!=1){
+        exponent--;
+        return base * exponentProgram(base, exponent)
+    }
+}
