@@ -22,10 +22,8 @@ function factorial(n){
 //    range(x, y-1);
 //}
 
-//Question 3
-function exponentProgram(base, exponent){
-    while(exponent!=1){
-        exponent--;
-        return base * exponentProgram(base, exponent)
-    }
+function exponentProgram(x, y){
+    if(y === 1)
+        return x;
+    return x * exponentProgram(x, y-1);
 }
